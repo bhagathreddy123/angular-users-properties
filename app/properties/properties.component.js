@@ -9,6 +9,32 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var PropertiesComponent = /** @class */ (function () {
     function PropertiesComponent() {
+        this.properties = [
+            {
+                name: 'abc',
+                price: '84732',
+                area: 543,
+                city: 'MahabubNagar',
+                Location: 'Achampet',
+                description: 'Residential Property'
+            },
+            {
+                name: 'bcc',
+                price: '24732',
+                area: 243,
+                city: 'Hyderabad',
+                Location: 'Amberpet',
+                description: 'Villa Property'
+            },
+            {
+                name: 'yuc',
+                price: '24732',
+                area: 243,
+                city: 'Hyderabad',
+                Location: 'RcPuram',
+                description: 'Apartment Property'
+            }
+        ];
     }
     PropertiesComponent = __decorate([
         core_1.Component({

@@ -1,1 +1,0 @@
-{"version":3,"file":"properties.compont.js","sourceRoot":"","sources":["properties.compont.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAO1C;IAAA;IAEA,CAAC;IAFY,mBAAmB;QAL/B,gBAAS,CAAC;YACT,QAAQ,EAAE,MAAM,CAAC,EAAE;YACnB,QAAQ,EAAE,YAAY;YACtB,WAAW,EAAE,2BAA2B;SACzC,CAAC;OACW,mBAAmB,CAE/B;IAAD,0BAAC;CAAA,AAFD,IAEC;AAFY,kDAAmB"}

@@ -7,17 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var PropertiesComponent = /** @class */ (function () {
-    function PropertiesComponent() {
+var UsersComponent = /** @class */ (function () {
+    function UsersComponent() {
     }
-    PropertiesComponent = __decorate([
+    UsersComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'properties',
-            templateUrl: 'properties.component.html'
+            selector: 'users',
+            templateUrl: 'users.component.html'
         })
-    ], PropertiesComponent);
-    return PropertiesComponent;
+    ], UsersComponent);
+    return UsersComponent;
 }());
-exports.PropertiesComponent = PropertiesComponent;
-//# sourceMappingURL=properties.compont.js.map
+exports.UsersComponent = UsersComponent;
+//# sourceMappingURL=users.component.js.map

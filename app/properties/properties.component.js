@@ -7,33 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var property_1 = require("./property");
 var PropertiesComponent = /** @class */ (function () {
     function PropertiesComponent() {
+        this.PropertyOne = new property_1.Property('akil property', 84732, 150, 'Mbnr', 'acpt', 'alkfdsjdalfjdsalf');
+        this.PropertyTwo = new property_1.Property('arjun property', 84732, 765, 'bangalore', 'Lbnr', 'dasfsdafdsa');
+        this.PropertyThree = new property_1.Property('arvind property', 4814, 897, 'Kurnol', 'chennai', 'sdfdsafsda');
         this.properties = [
-            {
-                name: 'abc',
-                price: '84732',
-                area: 543,
-                city: 'MahabubNagar',
-                Location: 'Achampet',
-                description: 'Residential Property'
-            },
-            {
-                name: 'bcc',
-                price: '24732',
-                area: 243,
-                city: 'Hyderabad',
-                Location: 'Amberpet',
-                description: 'Villa Property'
-            },
-            {
-                name: 'yuc',
-                price: '24732',
-                area: 243,
-                city: 'Hyderabad',
-                Location: 'RcPuram',
-                description: 'Apartment Property'
-            }
+            this.PropertyOne,
+            this.PropertyTwo,
+            this.PropertyThree
         ];
     }
     PropertiesComponent = __decorate([

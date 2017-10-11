@@ -2,8 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Property = /** @class */ (function () {
     function Property(id, namer, price, area, city, location, description) {
-        if (location === void 0) { location = string; }
         this.id = id;
+        this.namer = namer;
+        this.price = price;
+        this.area = area;
+        this.city = city;
+        this.location = location;
+        this.description = description;
     }
     return Property;
 }());

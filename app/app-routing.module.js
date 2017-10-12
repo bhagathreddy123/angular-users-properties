@@ -10,11 +10,13 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var homepage_component_1 = require("./homepage/homepage.component");
 var properties_component_1 = require("./properties/properties.component");
+var properties_new_component_1 = require("./properties/properties-new.component");
 var users_component_1 = require("./users/users.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: homepage_component_1.HomepageComponent },
     { path: 'properties', component: properties_component_1.PropertiesComponent },
+    { path: 'properties/new', component: properties_new_component_1.PropertiesNewComponent },
     { path: 'users', component: users_component_1.UsersComponent }
 ];
 var AppRoutingModule = /** @class */ (function () {

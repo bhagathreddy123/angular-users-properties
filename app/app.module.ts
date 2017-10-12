@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import  { HomepageComponent } from './homepage/homepage.component';
+import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PropertiesComponent } from './properties/properties.component';
+import { PropertiesNewComponent } from './properties/properties-new.component';
 import { UsersComponent } from './users/users.component';
 
 
@@ -16,6 +17,7 @@ import { UsersComponent } from './users/users.component';
     AppComponent,
     HomepageComponent,
     PropertiesComponent,
+    PropertiesNewComponent,
     UsersComponent
  ],
  bootstrap: [

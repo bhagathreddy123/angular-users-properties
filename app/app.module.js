@@ -12,6 +12,7 @@ var app_component_1 = require("./app.component");
 var homepage_component_1 = require("./homepage/homepage.component");
 var app_routing_module_1 = require("./app-routing.module");
 var properties_component_1 = require("./properties/properties.component");
+var properties_new_component_1 = require("./properties/properties-new.component");
 var users_component_1 = require("./users/users.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -26,6 +27,7 @@ var AppModule = /** @class */ (function () {
                 app_component_1.AppComponent,
                 homepage_component_1.HomepageComponent,
                 properties_component_1.PropertiesComponent,
+                properties_new_component_1.PropertiesNewComponent,
                 users_component_1.UsersComponent
             ],
             bootstrap: [

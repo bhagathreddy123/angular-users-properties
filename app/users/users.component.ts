@@ -1,33 +1,34 @@
-import { Component } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Component, Oninit } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { User } from './user';
+import { UserService } from './user.service';
 
 @Component({
   moduleId: module.id,
   selector: 'users',
-  templateUrl: 'users.component.html'
+  templateUrl: 'users.component.html',
+  providers: [ UserService ]
 })
 
-export class UsersComponent {
-users: User[] = [
-  {
-  name: "virat",
-  phone_no: '8475894032',
-  email: 'virat@gmail.com',
-  updated_at: '11/11/17'
-  },
-  {
-  name: "anil",
-  phone_no: '8475814032',
-  email: 'anil@gmail.com',
-  updated_at: '11/11/17'
-  },
-  {
-  name: "uday",
-  phone_no: '8475894032',
-  email: 'uday@gmail.com',
-  updated_at: '11/11/17'
-  }
-]
+export class UsersComponent implements OnInit {
+users: User[];
+errorMessage: string;
+mode = "Observable";
+constructor(
+  private userService: UserService;
+) {}
+
+ngOnInit() {
+let timer = Observable.timer(0,5000);
+timer.subscribe( () => this.getUsers());
+  
+}
+
+getUsers() {
+  this.userService.getUsers()
+   .subscribe(
+    users => this.users = users,
+    error => this.errorMessage = <any>error
+    );
+}
 }

@@ -6,11 +6,11 @@ import { Property } from './property';
   templateUrl: 'properties.component.html'
 })
 export class PropertiesComponent {
-  PropertyOne: Property = new Property( 'akil property',84732, 150,'Mbnr','acpt','alkfdsjdalfjdsalf')
+  PropertyOne: Property = new Property( 1, 'akil property',84732, 150,'Mbnr','acpt','alkfdsjdalfjdsalf')
 
-  PropertyTwo: Property = new Property( 'arjun property',84732, 765,'bangalore','Lbnr','dasfsdafdsa')
+  PropertyTwo: Property = new Property( 2, 'arjun property',84732, 765,'bangalore','Lbnr','dasfsdafdsa')
 
-  PropertyThree: Property = new Property( 'arvind property',4814,897,'Kurnol','chennai','sdfdsafsda')
+  PropertyThree: Property = new Property( 3,  'arvind property',4814,897,'Kurnol','chennai','sdfdsafsda')
 
   properties: Property[] = [
    this.PropertyOne,

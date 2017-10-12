@@ -1,6 +1,6 @@
 export class Property {
 	constructor(
-		//public id?: number,
+		public id?: number,
 		public name?: string,
 		public price?: string,
 		public area?: string,

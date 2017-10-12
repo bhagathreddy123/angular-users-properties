@@ -7,8 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var property_1 = require("./property");
 var PropertiesNewComponent = /** @class */ (function () {
     function PropertiesNewComponent() {
+        this.property = new property_1.Property;
     }
     PropertiesNewComponent = __decorate([
         core_1.Component({

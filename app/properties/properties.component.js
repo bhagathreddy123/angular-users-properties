@@ -10,9 +10,9 @@ var core_1 = require("@angular/core");
 var property_1 = require("./property");
 var PropertiesComponent = /** @class */ (function () {
     function PropertiesComponent() {
-        this.PropertyOne = new property_1.Property('akil property', 84732, 150, 'Mbnr', 'acpt', 'alkfdsjdalfjdsalf');
-        this.PropertyTwo = new property_1.Property('arjun property', 84732, 765, 'bangalore', 'Lbnr', 'dasfsdafdsa');
-        this.PropertyThree = new property_1.Property('arvind property', 4814, 897, 'Kurnol', 'chennai', 'sdfdsafsda');
+        this.PropertyOne = new property_1.Property(1, 'akil property', 84732, 150, 'Mbnr', 'acpt', 'alkfdsjdalfjdsalf');
+        this.PropertyTwo = new property_1.Property(2, 'arjun property', 84732, 765, 'bangalore', 'Lbnr', 'dasfsdafdsa');
+        this.PropertyThree = new property_1.Property(3, 'arvind property', 4814, 897, 'Kurnol', 'chennai', 'sdfdsafsda');
         this.properties = [
             this.PropertyOne,
             this.PropertyTwo,

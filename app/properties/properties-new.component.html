@@ -1,1 +1,102 @@
 <h1> Create Property </h1>
+<div>
+<form #propertyForm="ngForm">
+		<div class="form-group">
+			<label for="property">Property Name</label>
+			<input type="text"
+							id="property-name"
+							placeholder="ABC Company"
+							required
+							name="property-name"
+							#name='ngModel'
+							[(ngModel)]="property.name"
+			>
+			<div [hidden]="name.valid || name.pristine">
+ 			Property name is required
+ 			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="price">Pricc</label>
+			<input type="text"
+			id="price" placeholder="Price" 
+			required
+			name="price"
+			#price='ngModel'
+			[(ngModel)]="property.price"
+			>
+			<div [hidden]="price.valid || price.pristine">
+ 			Property price is required
+ 			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="area">Property Area </label>
+			<input type="text"
+			id="area"
+			placeholder="Property Price"
+			required
+			name="property_price"
+			#area='ngModel'
+			[(ngModel)]="property.area"
+			>
+				<div [hidden]="area.valid || area.pristine">
+ 			Property area is required
+ 			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="city">Property City </label>
+			<input type="text"
+			id="city"
+			placeholder="Property ciTy"
+			required
+			name="property_city"
+			#city='ngModel'
+			[(ngModel)]="property.city"
+			>
+					<div [hidden]="city.valid || city.pristine">
+ 			Property city is required
+ 			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="location">Property Location </label>
+			<input type="text"
+			id="location"
+			placeholder="Property location"
+			required
+			name="property_location"
+			#location='ngModel'
+			[(ngModel)]="property.location"
+			>
+					<div [hidden]="location.valid || location.pristine">
+ 			Property Location is required
+ 			</div>
+		</div>
+
+
+		<div class="form-group">
+			<label for="description">Property Description </label>
+			<input type="text"
+			id="description"
+			placeholder="Property description"
+			required
+			name="property_location"
+			#description='ngModel'
+			[(ngModel)]="property.description"
+			>
+			<div [hidden] = "description.valid || description.pristine">
+			Property Description is Required
+			</div>
+		</div>
+		
+</form>
+</div>
+
+<div>
+<p>Hi {{ property.name }},</p>
+
+
+	<p>I am excited to working with you and build out this project.</p>
+</div>

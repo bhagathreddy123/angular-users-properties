@@ -7,6 +7,7 @@ import { PropertyService } from './property.service';
 	moduleId: module.id,
 	selector: 'properties-new',
 	templateUrl: 'properties-new.component.html',
+	styleUrls: [ 'properties-new.component.css']
 	providers: [ PropertyService ]
 })
 

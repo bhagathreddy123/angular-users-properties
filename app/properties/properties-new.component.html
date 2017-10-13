@@ -1,102 +1,118 @@
-<h1> Create Property </h1>
-<div>
-<form (ngSubmit)="createProperty(property)" #propertyForm="ngForm">
-		<div class="form-group">
-			<label for="property">Property Name</label>
-			<input type="text"
-							id="property-name"
-							placeholder="ABC Company"
-							required
-							name="property-name"
-							#name='ngModel'
-							[(ngModel)]="property.name"
-			>
-			<div [hidden]="name.valid || name.pristine">
- 			Property name is required
- 			</div>
-		</div>
 
-		<div class="form-group">
-			<label for="price">Pricc</label>
-			<input type="text"
-			id="price" placeholder="Price" 
-			required
-			name="price"
-			#price='ngModel'
-			[(ngModel)]="property.price"
-			>
-			<div [hidden]="price.valid || price.pristine">
- 			Property price is required
- 			</div>
-		</div>
+<div style="card container form-container">
 
-		<div class="form-group">
-			<label for="area">Property Area </label>
-			<input type="text"
-			id="area"
-			placeholder="Property Price"
-			required
-			name="property_price"
-			#area='ngModel'
-			[(ngModel)]="property.area"
-			>
-				<div [hidden]="area.valid || area.pristine">
- 			Property area is required
- 			</div>
-		</div>
+	<div class="row">
+		<div class="col-md-6"> 
+			<h1> Create Property </h1>
+			<div>
+				<form (ngSubmit)="createProperty(property)" #propertyForm="ngForm">
+					<div class="form-group">
+						<label for="property">Property Name</label>
+						<input type="text"
+						id="property-name"
+						placeholder="ABC Company"
+						required
+						name="property-name"
+						#name='ngModel'
+						[(ngModel)]="property.name"
+						>
+						<div [hidden]="name.valid || name.pristine">
+							Property name is required
+						</div>
+					</div>
 
-		<div class="form-group">
-			<label for="city">Property City </label>
-			<input type="text"
-			id="city"
-			placeholder="Property City"
-			required
-			name="property_city"
-			#city='ngModel'
-			[(ngModel)]="property.city"
-			>
-					<div [hidden]="city.valid || city.pristine">
- 			Property city is required
- 			</div>
-		</div>
+					<div class="form-group">
+						<label for="price">Pricc</label>
+						<input type="text"
+						id="price" placeholder="Price" 
+						required
+						name="price"
+						#price='ngModel'
+						[(ngModel)]="property.price"
+						>
+						<div [hidden]="price.valid || price.pristine">
+							Property price is required
+						</div>
+					</div>
 
-		<div class="form-group">
-			<label for="location">Property Location </label>
-			<input type="text"
-			id="location"
-			placeholder="Property location"
-			required
-			name="property_location"
-			#location='ngModel'
-			[(ngModel)]="property.location"
-			>
-					<div [hidden]="location.valid || location.pristine">
- 			Property Location is required
- 			</div>
-		</div>
+					<div class="form-group">
+						<label for="area">Property Area </label>
+						<input type="text"
+						id="area"
+						placeholder="Property Price"
+						required
+						name="property_price"
+						#area='ngModel'
+						[(ngModel)]="property.area"
+						>
+						<div [hidden]="area.valid || area.pristine">
+							Property area is required
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="city">Property City </label>
+						<input type="text"
+						id="city"
+						placeholder="Property City"
+						required
+						name="property_city"
+						#city='ngModel'
+						[(ngModel)]="property.city"
+						>
+						<div [hidden]="city.valid || city.pristine">
+							Property city is required
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="location">Property Location </label>
+						<input type="text"
+						id="location"
+						placeholder="Property location"
+						required
+						name="property_location"
+						#location='ngModel'
+						[(ngModel)]="property.location"
+						>
+						<div [hidden]="location.valid || location.pristine">
+							Property Location is required
+						</div>
+					</div>
 
 
-		<div class="form-group">
-			<label for="description">Property Description </label>
-			<input type="text"
-			id="description"
-			placeholder="Property description"
-			required
-			name="property_location"
-			#description='ngModel'
-			[(ngModel)]="property.description"
-			>
-			<div [hidden] = "description.valid || description.pristine">
-			Property Description is Required
+					<div class="form-group">
+						<label for="description">Property Description </label>
+						<input type="text"
+						id="description"
+						placeholder="Property description"
+						required
+						name="property_location"
+						#description='ngModel'
+						[(ngModel)]="property.description"
+						>
+						<div [hidden] = "description.valid || description.pristine">
+							Property Description is Required
+						</div>
+					</div>
+					<button type="submit" class='btn btn-outline-primary btn-lg' [disabled]="!propertyForm.form.valid" [hidden]="submitted"> General Proposal</button>
+				</form>
 			</div>
 		</div>
-		<button type="submit" class='btn btn-outline-primary btn-lg' [disabled]="!propertyForm.form.valid" [hidden]="submitted"> General Proposal</button>
-</form>
-</div>
 
-<div>
-<p>Hi {{ property.name }},</p>
+		<div class="col-md-6">
+			<p>Hi {{ property.name }},</p>
 
 
-	<p>I am excited to working with you and build out this project.</p>
+			<p>I am excited to working with you and build out this project.</p>
+			<p>To successfully build out the application I will be utilizing {{ property.location }}, and a number of other tools to ensure that the project follows industry wide best practices.</p>
+
+
+				<p>Ensuring that you are fully informed is one of my top properties, so in addition to incorporating everything that we discussed, I will also be creating a project management dashboard and sending you a project update message daily so that you can have a transparent view of the development as it takes place.</p>
+
+
+
+		</div>
+	</div>
+
 </div>

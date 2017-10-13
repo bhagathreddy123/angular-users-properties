@@ -32,6 +32,7 @@ var PropertiesNewComponent = /** @class */ (function () {
             moduleId: module.id,
             selector: 'properties-new',
             templateUrl: 'properties-new.component.html',
+            styleUrls: ['properties-new.component.css'],
             providers: [property_service_1.PropertyService]
         }),
         __metadata("design:paramtypes", [property_service_1.PropertyService])

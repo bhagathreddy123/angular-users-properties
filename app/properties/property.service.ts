@@ -21,6 +21,7 @@ getProperty(id: number) {
 	return this.http.get(this.propertiesUrl + "/" + id + '.json');
 }
 
+
 createProperty(property){
 	let headers = new Headers({'Content-Type': 'application/json'});
 	let options = new RequestOptions({ headers: headers });

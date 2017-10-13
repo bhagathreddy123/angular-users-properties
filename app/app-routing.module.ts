@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { PropertiesNewComponent } from './properties/properties-new.component';
-
 import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
@@ -12,7 +11,7 @@ const routes: Routes = [
   { path: 'home', component:  HomepageComponent },
   { path: 'properties', component: PropertiesComponent },
   { path: 'properties/new', component: PropertiesNewComponent },
-  { path: 'users', component: UsersComponent }
+  { path: 'users', component: UsersComponent },
 ]
 @NgModule({
 imports: [ RouterModule.forRoot(routes) ],

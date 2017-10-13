@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PropertiesComponent } from './properties/properties.component';
 import { PropertiesNewComponent } from './properties/properties-new.component';
+import { PropertyService } from './properties/property.service';
 import { UserService } from './users/user.service';
 import { UsersComponent } from './users/users.component';
 
@@ -27,6 +28,7 @@ import { UsersComponent } from './users/users.component';
     UsersComponent,
  ],
  providers: [
+  PropertyService,
  	UserService
  ],
      

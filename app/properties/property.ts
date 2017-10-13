@@ -6,6 +6,6 @@ export class Property {
 		public area?: string,
 		public city?: string,
 		public location?: string,
-		public description: string,
+		public description?: string,
 	) {}
 }

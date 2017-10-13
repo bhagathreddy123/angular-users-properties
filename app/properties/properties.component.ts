@@ -1,20 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
 import { Property } from './property';
+import { PropertyService } from './property.service';
+
 @Component({
   moduleId: module.id,
   selector: 'properties',
-  templateUrl: 'properties.component.html'
+  templateUrl: 'properties.component.html',
+  providers: [ PropertyService ]
 })
-export class PropertiesComponent {
-  PropertyOne: Property = new Property( 1, 'akil property',84732, 150,'Mbnr','acpt','alkfdsjdalfjdsalf')
 
-  PropertyTwo: Property = new Property( 2, 'arjun property',84732, 765,'bangalore','Lbnr','dasfsdafdsa')
+export class PropertiesComponent implements OnInit {
+ 
+  properties: Property[];
+  errorMessage: string;
+  mode = "Observable";
 
-  PropertyThree: Property = new Property( 3,  'arvind property',4814,897,'Kurnol','chennai','sdfdsafsda')
+ constructor(
+    private propertyService: PropertyService,
+  ){}
 
-  properties: Property[] = [
-   this.PropertyOne,
-   this.PropertyTwo,
-   this.PropertyThree
-  ]
+ngOnInit() {
+    let timer = Observable.timer(0, 5000);
+    timer.subscribe(() => this.getProperties());
+  }
+
+  getProperties() {
+    this.propertyService.getProperties()
+      .subscribe(
+      properties => this.properties = properties,
+      error => this.errorMessage = <any>error
+      );
+  }
+
+  goToShow(property: Property): void {
+    let link = ['/property', property.id];
+    this.router.navigate(link);
+  } 
 }

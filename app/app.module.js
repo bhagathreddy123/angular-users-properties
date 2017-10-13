@@ -27,6 +27,7 @@ var AppModule = /** @class */ (function () {
                 platform_browser_1.BrowserModule,
                 app_routing_module_1.AppRoutingModule,
                 forms_1.FormsModule,
+                // NgbModule.forRoot(),
                 http_1.HttpModule
             ],
             declarations: [

@@ -8,4 +8,5 @@ import { Property } from './property';
 
 export class PropertiesNewComponent {
 	property = new Property;
+	submitted: boolean = false;
 }

@@ -11,6 +11,7 @@ var property_1 = require("./property");
 var PropertiesNewComponent = /** @class */ (function () {
     function PropertiesNewComponent() {
         this.property = new property_1.Property;
+        this.submitted = false;
     }
     PropertiesNewComponent = __decorate([
         core_1.Component({

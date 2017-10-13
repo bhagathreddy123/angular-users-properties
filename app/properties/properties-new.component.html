@@ -8,7 +8,7 @@
 				<form (ngSubmit)="createProperty(property)" #propertyForm="ngForm">
 					<div class="form-group">
 						<label for="property">Property Name</label>
-						<input type="text"
+						<input type="text" class="form-control" 
 						id="property-name"
 						placeholder="ABC Company"
 						required
@@ -16,28 +16,28 @@
 						#name='ngModel'
 						[(ngModel)]="property.name"
 						>
-						<div [hidden]="name.valid || name.pristine">
+						<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
 							Property name is required
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="price">Pricc</label>
-						<input type="text"
+						<input type="text" class="form-control" 
 						id="price" placeholder="Price" 
 						required
 						name="price"
 						#price='ngModel'
 						[(ngModel)]="property.price"
 						>
-						<div [hidden]="price.valid || price.pristine">
+						<div [hidden]="price.valid || price.pristine" class="alert alert-danger">
 							Property price is required
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="area">Property Area </label>
-						<input type="text"
+						<input type="text" class="form-control" 
 						id="area"
 						placeholder="Property Price"
 						required
@@ -45,14 +45,14 @@
 						#area='ngModel'
 						[(ngModel)]="property.area"
 						>
-						<div [hidden]="area.valid || area.pristine">
+						<div [hidden]="area.valid || area.pristine" class="alert alert-danger">
 							Property area is required
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="city">Property City </label>
-						<input type="text"
+						<input type="text" class="form-control" 
 						id="city"
 						placeholder="Property City"
 						required
@@ -60,14 +60,14 @@
 						#city='ngModel'
 						[(ngModel)]="property.city"
 						>
-						<div [hidden]="city.valid || city.pristine">
+						<div [hidden]="city.valid || city.pristine" class="alert alert-danger">
 							Property city is required
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="location">Property Location </label>
-						<input type="text"
+						<input type="text" class="form-control" 
 						id="location"
 						placeholder="Property location"
 						required
@@ -75,7 +75,7 @@
 						#location='ngModel'
 						[(ngModel)]="property.location"
 						>
-						<div [hidden]="location.valid || location.pristine">
+						<div [hidden]="location.valid || location.pristine" class="alert alert-danger">
 							Property Location is required
 						</div>
 					</div>
@@ -83,15 +83,15 @@
 
 					<div class="form-group">
 						<label for="description">Property Description </label>
-						<input type="text"
+						<input type="text" class="form-control" 
 						id="description"
 						placeholder="Property description"
 						required
-						name="property_location"
+						name="property_description"
 						#description='ngModel'
 						[(ngModel)]="property.description"
 						>
-						<div [hidden] = "description.valid || description.pristine">
+						<div [hidden] = "description.valid || description.pristine" class="alert alert-danger">
 							Property Description is Required
 						</div>
 					</div>

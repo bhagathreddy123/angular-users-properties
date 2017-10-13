@@ -15,6 +15,7 @@ var homepage_component_1 = require("./homepage/homepage.component");
 var app_routing_module_1 = require("./app-routing.module");
 var properties_component_1 = require("./properties/properties.component");
 var properties_new_component_1 = require("./properties/properties-new.component");
+var properties_show_component_1 = require("./properties/properties-show.component");
 var property_service_1 = require("./properties/property.service");
 var user_service_1 = require("./users/user.service");
 var users_component_1 = require("./users/users.component");
@@ -35,6 +36,7 @@ var AppModule = /** @class */ (function () {
                 homepage_component_1.HomepageComponent,
                 properties_component_1.PropertiesComponent,
                 properties_new_component_1.PropertiesNewComponent,
+                properties_show_component_1.PropertiesShowComponent,
                 users_component_1.UsersComponent,
             ],
             providers: [

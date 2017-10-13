@@ -7,10 +7,12 @@ import { UserService } from './user.service';
   moduleId: module.id,
   selector: 'users',
   templateUrl: 'users.component.html',
+  styleUrls: ['users.component.css'],
   providers: [ UserService ]
 })
 
 export class UsersComponent implements OnInit {
+pageTitle: string = "User DashBoard"
 users: User[];
 errorMessage: string;
 mode = "Observable";

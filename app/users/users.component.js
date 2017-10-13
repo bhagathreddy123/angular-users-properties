@@ -15,6 +15,7 @@ var user_service_1 = require("./user.service");
 var UsersComponent = /** @class */ (function () {
     function UsersComponent(userService) {
         this.userService = userService;
+        this.pageTitle = "User DashBoard";
         this.mode = "Observable";
     }
     UsersComponent.prototype.ngOnInit = function () {
@@ -32,6 +33,7 @@ var UsersComponent = /** @class */ (function () {
             moduleId: module.id,
             selector: 'users',
             templateUrl: 'users.component.html',
+            styleUrls: ['users.component.css'],
             providers: [user_service_1.UserService]
         }),
         __metadata("design:paramtypes", [user_service_1.UserService])
